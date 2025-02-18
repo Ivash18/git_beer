@@ -1,21 +1,22 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('Фон.jpg');
-    background-size: cover;
+    background-image: url('image.png');
+    background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
     background-attachment: fixed;
-    color: rgb(255, 230, 0);
+    color:#f8f8f8ef;
+    
 }
 
 h1 {
     text-align: center;
-    padding: 20px;
+    padding: 250px 0px 0px 0px;
     margin-top: 30px;
     font-size: 65px;
-    text-shadow: 5px 5px 5px rgb(252, 152, 21);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
 }
 
 ul {
@@ -66,7 +67,7 @@ li a:hover:not(.active) {
 .container p {
     text-align: center;
     font-size: 36px;
-    text-shadow: 5px 5px 5px rgb(252, 152, 21);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
 }
 
 .image-container {
@@ -94,4 +95,79 @@ li a:hover:not(.active) {
     font-size: 22px;
     padding: 5px;
     text-align: center;
+}
+
+.reclama{
+    text-indent: 30px;
+    text-align: left;
+    margin: -20px 150px 150px 150px;
+    padding: 0px;
+    font-size: 18px;
+
+}
+
+.warning{
+    margin: 0px 250px 150px 250px;
+}
+
+.down_text{
+    display: inline-block;
+    background-color: #222222;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.down_text p{
+    margin-left: 30px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: white;
+    padding: 2px;
+}
+
+/* 🔥 Медиа-запросы для адаптации 🔥 */
+@media screen and (max-width: 1024px) {
+    .images {
+        width: calc(50% - 20px); /* Два блока в ряд на планшетах */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 45px; /* Уменьшаем заголовок */
+    }
+
+    .container p {
+        font-size: 28px; /* Уменьшаем текст */
+    }
+
+    .image-container {
+        gap: 10px; /* Уменьшаем отступы */
+    }
+
+    .images {
+        width: 100%; /* Один блок в ряд на телефонах */
+    }
+
+    ul {
+        flex-direction: column; /* Меню становится вертикальным */
+        text-align: center;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    li a {
+        font-size: 20px; /* Уменьшаем текст в меню */
+        padding: 10px;
+    }
+
+    .search {
+        width: 90%; /* Поле поиска уменьшается */
+        margin: 10px auto;
+        display: block;
+    }
 }
